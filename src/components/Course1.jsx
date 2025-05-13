@@ -1,5 +1,6 @@
 const Cousre = ({ course}) => {
-    const totalExercise = course.parts.reduce((sum, part) => sum + part.exercises, 0)
+    console.log("Course is working")
+    const totalExercises = course.parts.reduce((sum, part) => sum + part.exercises, 0)
     return (
         <div>
             <Header name={course.name} />
@@ -14,11 +15,11 @@ const Header = ({ name }) => <h2>{name}</h2>
 const Content = ({ parts }) => (
     <div>
         {parts.map(part => (
-            <part key={part.id} name={part.name} exercises={part.exercises} />
+            <Part key={part.id} name={part.name} exercises={part.exercises} />
         ))}
     </div>
 )
 
-const part = ({ name, exercises}) => <p>{name} {exercise}</p>
+const Part = ({ name, exercise}) => <p>{name} {exercise}</p>
 
 export default Cousre

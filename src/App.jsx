@@ -1,5 +1,6 @@
 import Course from './Components/Course1'
 const App = () => {
+  
   const courses = [
     {
       name: 'Half Stack application development',
