@@ -23,3 +23,4 @@ const Content = ({ parts }) => (
 const Part = ({ name, exercise}) => <p>{name} {exercise}</p>
 
 export default Cousre
+ 
