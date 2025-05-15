@@ -1,10 +1,11 @@
 const Part = ({ name, exercises }) => {
-    return (
-      <p>
-        {name} {exercises}
-      </p>
-    )
-  }
-  
-  export default Part
-  
+  console.log("Part component is rendering with:", name, "Exercises:", exercises)
+
+  return (
+    <p>
+      {name} {exercises}
+    </p>
+  )
+}
+
+export default Part

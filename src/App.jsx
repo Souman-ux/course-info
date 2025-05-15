@@ -1,6 +1,8 @@
 import Course from './Components/Course1'
+
 const App = () => {
-  
+  console.log("App component is rendering")
+
   const courses = [
     {
       name: 'Half Stack application development',
@@ -33,9 +35,10 @@ const App = () => {
   return (
     <div>
       <h1>Course List</h1>
-      {courses.map(course => (
-        <Course key={course.id} course={course} />
-      ))}
+      {courses.map(course => {
+        console.log("Rendering Course component for:", course.name)
+        return <Course key={course.id} course={course} />
+      })}
     </div>
   )
 }
